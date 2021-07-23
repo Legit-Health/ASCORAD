@@ -15,7 +15,23 @@
 
 
 ## [What is ASCORAD?](https://legit.health/)
-ASCORAD is a fast, accurate and fully automatic scoring system for the severity assessment of atopic dermatitis.
+
+Objective, reliable, and precise outcome measures are a prerequisite to evidence-based health care. When considering atopic dermatitis, the EASI and SCORAD have proven to have the best measurement properties and are the most recommended for use in future clinical trials. However, the SCORAD shows, as with all other manual scoring systems, **intra and interobserver disagreements**. The variation in scores is about 20%. As well as that, filling up the sheet has proven to be too tedious for some dermatologists. The [traditional] SCORAD system takes time and even experienced dermatologists will require seven (7) minuntes in total – an inexperienced physician will need 10 min (Oranje, A. P., Glazenburg, E. J., Wolkerstorfer, A., & de Waard-van der Spek, F. B. (2007).
+
+ASCORAD is a fast, accurate and **fully automatic scoring system** for the severity assessment of atopic dermatitis.
+
+We consider the **ASCORAD** to be the Next-Generation in the evolution of scoring atopic dermatitis, that stater with the [pen-and-paper version](https://legit.health/ascorad-atopic-dermatitis-automatic-scoring-system/#ib-toc-anchor-2) developed in 1993, then evolved into [online calculators](https://legit.health/ascorad-atopic-dermatitis-automatic-scoring-system/#ib-toc-anchor-3), and finally the [ASCORAD (Automatic SCOring of Atopic Dermatitis)](https://legit.health/ascorad-atopic-dermatitis-automatic-scoring-system/)
+
+![Evolution of scoring system](https://legit.health/wp-content/uploads/2021/07/ASCORAD-evoluton-of-scoring-systems.jpg)
+
+||Pen and Paper|Digital|Automatic (AI)|
+|--- |--- |--- |--- |
+|Self Supervision|–|–|Performs diagnosis|
+|Ease of use|≈ 600 seconds|≈ 420 seconds|≈ 23 seconds|
+|Sensitivity to change|0 to 4|0 to 4|0 to 100|
+|Interobserver variability|Medium (20%)|Medium (20%)|Lowest (8%)|
+|Intra-observer variability|High|High|Zero|
+[Comparison of SCORAD scoring systems methods](https://legit.health/ascorad-atopic-dermatitis-automatic-scoring-system/#ib-toc-anchor-7)
 
 ![Legit Health Web Application](figures/Figure_3.png)
 
