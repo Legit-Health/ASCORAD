@@ -16,13 +16,15 @@
 
 ## [What is ASCORAD?](https://legit.health/)
 
-Objective, reliable, and precise outcome measures are a prerequisite to evidence-based health care. When considering atopic dermatitis, the EASI and SCORAD have proven to have the best measurement properties and are the most recommended for use in future clinical trials. However, the SCORAD shows, as with all other manual scoring systems, **intra and interobserver disagreements**. The variation in scores is about 20%. As well as that, filling up the sheet has proven to be too tedious for some dermatologists. The [traditional] SCORAD system takes time and even experienced dermatologists will require seven (7) minuntes in total – an inexperienced physician will need 10 min (Oranje, A. P., Glazenburg, E. J., Wolkerstorfer, A., & de Waard-van der Spek, F. B. (2007).
+Objective, reliable, and precise outcome measures are a prerequisite to evidence-based health care. When considering atopic dermatitis, the SCORAD have proven to have the best measurement properties and is one of the most recommended for use in clinical trials. However, the SCORAD shows, as with all other manual scoring systems, **intra and interobserver disagreements**. The variation in scores is about 20%. As well as that, filling up the sheet has proven to be too tedious for some dermatologists. The [traditional] SCORAD system takes time and even experienced dermatologists will require seven (7) minuntes in total – an inexperienced physician will need 10 min (Oranje, A. P., Glazenburg, E. J., Wolkerstorfer, A., & de Waard-van der Spek, F. B. (2007).
 
 ASCORAD is a fast, accurate and **fully automatic scoring system** for the severity assessment of atopic dermatitis.
 
 We consider the **ASCORAD** to be the Next-Generation in the evolution of scoring atopic dermatitis, that stater with the [pen-and-paper version](https://legit.health/ascorad-atopic-dermatitis-automatic-scoring-system/#ib-toc-anchor-2) developed in 1993, then evolved into [online calculators](https://legit.health/ascorad-atopic-dermatitis-automatic-scoring-system/#ib-toc-anchor-3), and finally the [ASCORAD (Automatic SCOring of Atopic Dermatitis)](https://legit.health/ascorad-atopic-dermatitis-automatic-scoring-system/)
 
 ![Evolution of scoring system](https://legit.health/wp-content/uploads/2021/07/ASCORAD-evoluton-of-scoring-systems.jpg)
+
+The following table offers a comparison between the clinimetric properties of deploying the SCORAD scoring system.
 
 ||Pen and Paper|Digital|Automatic (AI)|
 |--- |--- |--- |--- |
@@ -32,6 +34,8 @@ We consider the **ASCORAD** to be the Next-Generation in the evolution of scorin
 |Interobserver variability|Medium (20%)|Medium (20%)|Lowest (8%)|
 |Intra-observer variability|High|High|Zero|
 [Comparison of SCORAD scoring systems methods](https://legit.health/ascorad-atopic-dermatitis-automatic-scoring-system/#ib-toc-anchor-7)
+
+The following screen capture of the application [https://app.legit.health](https://app.legit.health) offers an example of how the developers deploy the ASCORAD in a web interface that acts as a clinical decision support tools, and empowers patients by giving the the hability of submitting images that are automatically evaluated by the ASCORAD.
 
 ![Legit Health Web Application](figures/Figure_3.png)
 
@@ -111,6 +115,6 @@ Using the range [0, 100], the median ground truth for training gave the best RMA
 *ASCORAD: Automatic Scoring of Atopic Dermatitis using Deep Learning* is under review.
 
 ## Contact
-[Alfonso Medela](https://www.linkedin.com/notifications/) \
+[Alfonso Medela](https://www.linkedin.com/in/alfonsomedela/) \
 [Taig Mac Carthy](https://www.linkedin.com/in/taigmaccarthy/) \
 [Andy Aguilar](https://www.linkedin.com/in/andy-aguilar/) 
