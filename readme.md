@@ -23,12 +23,13 @@ ASCORAD is a fast, accurate and fully automatic scoring system for the severity 
 
 *SCORADNet* was train and tested using three datasets:
 
-- **LegitHealth-AD**. Description.
-- **LegitHealth-AD-Test**. Description.
-- **LegitHealth-AD-FPK-IVI**. Description.
+- **LegitHealth-AD**. 
+- **LegitHealth-AD-Test**. 
+- **LegitHealth-AD-FPK-IVI**. 
 
 
 In order to run the code, the datasets have to be placed in a directory (*DATASET_ROOT_PATH*) following this scheme:
+
 ```
 ├── 📁 DATASET_ROOT_PATH
 │   |
@@ -45,19 +46,20 @@ In order to run the code, the datasets have to be placed in a directory (*DATASE
 │   ├── 📁 LegitHealth-HealthySkin
 ```
 
-The distributions of the visual sign intensities are quite different on each dataset, as it can be seen in the following figure.
+The distributions of the visual sign intensities are quite different on each dataset, as it can be seen in the following figure:
+
 ![Dataset distributions](figures/Figure_1.png)
 
 
 ## Method
-The ASCORAD calculation can be divided in two parts, lesion surface segmentation and visual sign severity assessment. We trained two separated models, one for each type of problem and named SCORADNet to the neural networks involved in the calculation of the ASCORAD. We used a U-Net with Resnet-34 backbone for segmentation and a multi-output (6) EfficientNet-B0 for classification.
+The ASCORAD calculation can be divided in two parts, lesion surface segmentation and visual sign severity assessment. We trained two separated models, one for each task, and named SCORADNet to the neural networks involved in the calculation of the ASCORAD. We used a **U-Net** with **Resnet-34** backbone for segmentation and a multi-output (6) **EfficientNet-B0** for classification.
 
 ## Results
 ### Lesion segmentation
 
-[Results](https://github.com/Legit-Health/ASCORAD/blob/main/code/lesion-segmentation/exp1/readme.md) on LegitHealth-AD-Test are very promising, obtaining an IoU greater than 50%, 75% F1 and an outstanding AUC of 93%.
+Resultson on Caucasian skin (LegitHealth-AD-Test) LegitHealth-AD-Test are very promising, obtaining an IoU greater than 50%, 75% F1 and an outstanding AUC of 93%.
 
-Metrics on LegitHealth-AD-Test
+Metrics on LegitHealth-AD-Test and LegitHealth-AD-FPK-IVI
 |  Skin type      | Accuracy | AUC   | IoU   |   F1  |
 |:--------------:|:--------:|-------|-------|:-----:|
 | Fitzpatric I,II,III |   84.54  | 93.06 | 63.86 | 74.45 |
