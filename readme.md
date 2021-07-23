@@ -23,9 +23,10 @@ ASCORAD is a fast, accurate and fully automatic scoring system for the severity 
 
 *SCORADNet* was train and tested using three datasets:
 
-- **LegitHealth-AD**. 
-- **LegitHealth-AD-Test**. 
-- **LegitHealth-AD-FPK-IVI**. 
+- **LegitHealth-AD**. 604 images that belong to Caucasian patients, of which one third are children, suffering from atopic
+dermatitis with lesions present on different body parts.
+- **LegitHealth-AD-Test**. 367 images that belong to Caucasian patients and were gathered from several dermatological atlases available online. 
+- **LegitHealth-AD-FPK-IVI**. 112 images collected from online dermatological atlases that contains photos of patients with IV, V and VI skin types suffering from atopic dermatitis.
 
 
 In order to run the code, the datasets have to be placed in a directory (*DATASET_ROOT_PATH*) following this scheme:
