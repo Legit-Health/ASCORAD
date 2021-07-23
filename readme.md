@@ -26,7 +26,7 @@ ASCORAD is a fast, accurate and fully automatic scoring system for the severity 
 - **LegitHealth-AD**. 604 images that belong to Caucasian patients, of which one third are children, suffering from atopic
 dermatitis with lesions present on different body parts.
 - **LegitHealth-AD-Test**. 367 images that belong to Caucasian patients and were gathered from several dermatological atlases available online. 
-- **LegitHealth-AD-FPK-IVI**. 112 images collected from online dermatological atlases that contains photos of patients with IV, V and VI skin types suffering from atopic dermatitis.
+- **LegitHealth-AD-FPK-IVI**. 112 images collected from online dermatological atlases that contain photos of patients with IV, V and VI skin types suffering from atopic dermatitis.
 
 
 In order to run the code, the datasets have to be placed in a directory (*DATASET_ROOT_PATH*) following this scheme:
@@ -69,7 +69,7 @@ Metrics on LegitHealth-AD-Test and LegitHealth-AD-FPK-IVI
 ![Dataset distributions](figures/Figure_4.png)
 
 
-[Results](https://github.com/Legit-Health/ASCORAD/blob/main/code/lesion-segmentation/exp2/readme.md) on darker skin improve including dark skin samples on the training set, however, metrics do not get as good as with Causasian skin. This is due to the small amount of images of dark skin. We have proved that results improve adding just a few images, and this is promising to create a model that performs well on the whole Fitzpatrick scale in the future.
+Results on darker skin improve including dark skin samples on the training set, however, metrics do not get as good as with Causasian skin. This is due to the small amount of images of dark skin. We have proved that results improve adding just a few images, and this is promising to create a model that performs well on the whole Fitzpatrick scale in the future.
 
 
 There is a significant difference between the model from experiment 1 to the second one on darker skin, which can be seen in the following example. The image from the left shows the predicted mask from experiment 1 and the second one the mask predicted with the model trained on experiment 2. In the second case, the image corresponds to the test split.
@@ -78,20 +78,21 @@ There is a significant difference between the model from experiment 1 to the sec
 
 ### Visual sign severity grading
 #### Finding the optimal parameters
-In [experiment 1](https://github.com/Legit-Health/ASCORAD/tree/main/code/visual-sign-intensity-estimation/exp1) we proved the hypothesis that a larger range contributes to lower RMAE values. We obtained 0.7-1% better results with [0, 100] range that in the original [0, 3] range. In the [second experiment](https://github.com/Legit-Health/ASCORAD/tree/main/code/visual-sign-intensity-estimation/exp2) we found out that training with the median of the annotators as the ground truth gets better results. Finally, we also demonstrated that despite obtaining a similar RMAE, [upsampling](https://github.com/Legit-Health/ASCORAD/tree/main/code/visual-sign-intensity-estimation/exp3) the dataset leads to significantly better predicted intensity distributions, predicting values from both extremes of the distribution.
+In this experiment we proved the hypothesis that a larger range contributes to lower RMAE values. We obtained 0.7-1% better results with [0, 100] range that in the original [0, 3] range. In addition, we found out that training with the median of the annotators as the ground truth gets better results.
 
 | Experiment |  Range  | GT statistic | Upsampling | RMAE 1 (v2) | RMAE 2 (v2) | RMAE 1 (v3) | RMAE 2 (v3) |
 |------------|:-------:|:------------:|:----------:|:-----------:|:-----------:|:-----------:|:-----------:|
 | 1          |  [0,3]  |    Median    |     No     |     13.2    |     13.9    |     19.6    |     18.5    |
 | 1          |  [0,10] |    Median    |     No     |     14.7    |     12.5    |     21.1    |     18.0    |
-| 1          | [0,100] |    Median    |     No     |     14.5    |     12.2    |     21.0    |     17.8    |
+| 1          | [0,100] |    Median    |     No     |     14.5    |     **12.2**    |     21.0    |     **17.8**    |
 | 2          | [0,100] |     Mean     |     No     |     13.8    |     12.6    |     21.1    |     17.8    |
 
 
-Usin the range [0, 100], the median GT only for training, and no upsampling gave the best RMAE result, with 12.2% for LegitHealth-AD-Test and 17.8% for LegitHealth-AD-FPK-IVI.
+Using the range [0, 100], the median ground truth for training gave the best RMAE result, with 12.2% for LegitHealth-AD-Test and 17.8% for LegitHealth-AD-FPK-IVI.
 
 
 ## Reference
+ASCORAD paper is under review.
 
 ## Contact
 [Alfonso Medela](https://www.linkedin.com/notifications/) \
