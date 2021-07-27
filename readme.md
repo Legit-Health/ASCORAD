@@ -102,10 +102,10 @@ In this experiment we proved the hypothesis that a larger range contributes to l
 
 | Experiment |  Range  | GT statistic | Upsampling | RMAE 1 (v2) | RMAE 2 (v2) | RMAE 1 (v3) | RMAE 2 (v3) |
 |------------|:-------:|:------------:|:----------:|:-----------:|:-----------:|:-----------:|:-----------:|
-| 1          |  [0,3]  |    Median    |     No     |     13.2    |     13.9    |     19.6    |     18.5    |
-| 1          |  [0,10] |    Median    |     No     |     14.7    |     12.5    |     21.1    |     18.0    |
-| 1          | [0,100] |    Median    |     No     |     14.5    |     **12.2**    |     21.0    |     **17.8**    |
-| 2          | [0,100] |     Mean     |     No     |     13.8    |     12.6    |     21.1    |     17.8    |
+| 1          |  [0,3]  |    Median    |     No     |     13.6    |     14.3    |     21.2    |     20.8    |
+| 1          |  [0,10] |    Median    |     No     |     14.3    |     13.2    |     22.8    |     20.0    |
+| 1          | [0,100] |    Median    |     No     |     14.4    |     **13.0**    |     22.6    |     **19.8**    |
+| 2          | [0,100] |     Mean     |     No     |     13.5    |     13.4    |     21.1    |     19.9    |
 
 
 Using the range [0, 100], the median ground truth for training gave the best RMAE result, with 12.2% for LegitHealth-AD-Test and 17.8% for LegitHealth-AD-FPK-IVI.
