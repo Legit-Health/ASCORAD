@@ -115,7 +115,7 @@ Using the range [0, 100], the median ground truth for training gave the best RMA
 [Automatic SCOring of Atopic Dermatitis using Deep Learning (ASCORAD): A Pilot Study](https://www.jidinnovations.org/article/S2667-0267(22)00014-5/fulltext)
 
 ## Funding
-We thank/the authors thank, the Basque Country government and the European Union (European Regional Development Fund 2021-2027 (ERDF)) for financial support through Hazitek program at its 2022 call (project ref: ZL-2022/00113)
+We thank the Basque Country government and the European Union (European Regional Development Fund 2021-2027 (ERDF)) for financial support through Hazitek program at its 2022 call (project ref: ZL-2022/00113)
 
 ## Contact
 [Alfonso Medela](https://www.linkedin.com/in/alfonsomedela/) \
